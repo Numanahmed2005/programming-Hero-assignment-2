@@ -133,7 +133,7 @@ line-height: 26px; /* 162.5% */
    text-align: center;
 }
 .img-1{
-    width: 100%;
+    width: auto;
 }
 .image-1{
     width: 80%;
@@ -153,6 +153,9 @@ line-height: 26px; /* 162.5% */
 }
 .pic-2{
     text-align: center;
+}
+.img-3{
+    width: 100%;
 }
 
 
@@ -207,7 +210,9 @@ line-height: 26px; /* 162.5% */
        }
        /* img group */
       
-       
+       .img-1{
+        width: 100%;
+       }
 
        .img{
         margin-top: 20px;
