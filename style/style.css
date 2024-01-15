@@ -128,7 +128,32 @@ font-style: normal;
 font-weight: 400;
 line-height: 26px; /* 162.5% */
 }
-
+/* img group*/
+.img-group{
+   text-align: center;
+}
+.img-1{
+    width: 100%;
+}
+.image-1{
+    width: 80%;
+}
+.img-2{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    gap: 20px;
+}
+.img-3{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.pic-2{
+    text-align: center;
+}
 
 
 
@@ -180,5 +205,24 @@ line-height: 26px; /* 162.5% */
        .popular img{
         margin-top: 20px;
        }
+       /* img group */
+      
+       
+
+       .img{
+        margin-top: 20px;
+       }
+       .image-1{
+        text-align: center;
+     
+        width: 100%;
+       }
+       .img-2{
+        flex-direction: column;
+        width: 100%;
+        
+        
+       }
+       
         
 }
