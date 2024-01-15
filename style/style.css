@@ -23,7 +23,7 @@
 
 .nav>ul {
     display: flex;
-    margin-right: 130px;
+    /* margin-right: 130px; */
 
 }
 
@@ -104,4 +104,50 @@ background: #FFF;
 background: #FF5400;
 width: 174px;
 height: 52px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  mobile responsive  */
+@media screen and (max-width: 576px){
+    .nav{
+        flex-direction: column;
+    }
+    .nav ul li{
+        margin-left: 1rem;
+    }
+    .banner-tittle{
+        font-weight: 500;
+        font-size: 30px;
+    }
+  
+    .banner-discription{
+        margin-left: 10px;
+         text-align: center; 
+         width: 100%;
+         margin-top: auto;
+         
+        }
+        .banner-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
 }
