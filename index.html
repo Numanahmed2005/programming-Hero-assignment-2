@@ -8,33 +8,54 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <div class="icon">
-            <img src="/Images/Group 40071 (2).png" alt="">
-            <h2 class="nav-tittle"> Explore<span class="span"> World</span></h2>
-            </div>
+        <div class="header-nav">
+          <div class="nav-logo">
+            <img src="./Images/Group 40071 (2).png" alt="" />
+            <h1>Travel <span>Freek</span></h1>
+          </div>
+          <nav>
             <ul>
-                <li> <a href="#"><span class="span"> Home</span> </a></li>
-                <li> <a href="#"> Packages </a></li>
-                <li> <a href="#"> Testimonial </a></li>
-                <li> <a href="#">Blog  </a></li>
-                <li> <a href="#">Contact  </a></li>
+              <li><a href="#"><span id="home">Home</span></a></li>
+              <li><a href="#">Packages</a></li>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
-          
+          </nav>
+          <a href="#" class="bars"><i class="fa-solid fa-bars"></i></a>
         </div>
-        </nav>
-        <div class="banner">
-         <h1 class="banner-tittle">Explore Your Travel</h1>
-         <p class="banner-discription">"Travel opens minds, revealing diverse cultures, fostering connections, and creating memories that color our lives with vivid experiences and understanding."</p>
-        <div class="banner-form">
-            <input placeholder="Where go">
-            <input placeholder="When">
-            <input placeholder="select type">
-            <button class="button"> Find Now </button>
-           
-            
+        <!-- nav end -->
+        <!-- banner section -->
+        <div class="banner-container">
+          <div class="banner-content">
+            <h1>Explore Your Travel</h1>
+            <p>Embark on journeys, discover new horizons, meet diverse cultures, savor exotic cuisines, create memories, marvel at landscapes, explore endlessly, wanderlust fulfilled.
+            </p>
+          </div>
+          <div class="banner-input-filed">
+            <div class="banner-filed">
+              <input type="text" placeholder="Where go" />
+            </div>
+            <div class="banner-filed">
+              <select>
+                <option value="">When</option>
+                <option value="">Morning</option>
+                <option value="">Evening</option>
+              </select>
+            </div>
+            <div class="banner-filed">
+              <select>
+                <option value="">Select Type</option>
+                <option value="">Bus</option>
+                <option value="">Train</option>
+                <option value="">Airway</option>
+              </select>
+            </div>
+            <button><i class="fa-solid fa-magnifying-glass"></i>Find Now</button>
+          </div>
         </div>
-    </header>
+      </header>
+    
     <main>
         <section class="pop">       
             <div class="popular" >  
@@ -143,28 +164,111 @@
           </div>
          </section>
          <!--  deals and cont -->
-         <section>
-          <div class="deals-1"> 
-            <div class="deal-1">
-            <h3> Tour To Satorini</h3>
-            <p class="popular-paragraph"> Amet consectetur. Vulputate commodo felis 
-              molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
-              <p> Price: $1300-$1500 </p>
-              <button class="button"> Book Now</button>
+         <section class="deals-container">
+            <div class="deals-content">
+              <h1>Deals & Discounts</h1>
+              <p>
+                Discover unparalleled value with our exclusive deals and discounts, designed to make your travel dreams a reality without compromising on quality. Whether you're seeking a spontaneous getaway, planning a family vacation
+              </p>
             </div>
+            <div class="first-deals-container">
+              <div class="deal-main-container">
+                <div class="deals-details">
+                  <div>
+                    <i class="fa-solid fa-clock"></i>
+                  <p>7 Day / 6 Night</p>
+                  </div>
+                 <div>
+                  <i class="fa-solid fa-people-roof"></i>
+                  <p>Max : 10</p>
+                 </div>
+                  <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                  <p>Malaysia</p>
+                  </div>
+                </div>
+                <div class="bottom-content">
+                  <h1>Tour To Satorini</h1>
+                <p>
+                  Begin your exploration of Santorini by visiting the charming capital, Fira. Wander through its narrow streets.
+                </p>
+                <h3>Price: $1300-$1500</h3>
+                <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="deals-container ">
+            <!-- second deal container -->
+            <div class=" second-deals-container">
+              <div class="second-main-container">
+                <div class="deals-details">
+                  <div>
+                    <i class="fa-solid fa-clock"></i>
+                  <p>7 Day / 6 Night</p>
+                  </div>
+                 <div>
+                  <i class="fa-solid fa-people-roof"></i>
+                  <p>Max : 10</p>
+                 </div>
+                  <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                  <p>Malaysia</p>
+                  </div>
+                </div>
+                <div class="bottom-content">
+                  <h1>Tour To Satorini</h1>
+                <p>
+                  In the afternoon, venture to the iconic village of Oia, renowned for its mesmerizing sunsets. 
+                </p>
+                <h3>Price: $1300-$1500</h3>
+                <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- third deals container -->
+          <section class="deals-container">
            
-          </div>
-
-
-
-         </section>
+            <div class="first-deals-container">
+              <div class="deal-main-container">
+                <div class="deals-details">
+                  <div>
+                    <i class="fa-solid fa-clock"></i>
+                  <p>7 Day / 6 Night</p>
+                  </div>
+                 <div>
+                  <i class="fa-solid fa-people-roof"></i>
+                  <p>Max: 10</p>
+                 </div>
+                  <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                  <p>Malaysia</p>
+                  </div>
+                </div>
+                <div class="bottom-content">
+                  <h1>Tour To Satorini</h1>
+                <p>
+                  Upon your arrival at Santorini's airport or port, our welcoming team will ensure a smooth transfer to you. 
+                </p>
+                <h3>Price: $1300-$1500</h3>
+                <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <button>See All Packages</button>
+            </div>
+          </section>
+        
+         
          <!--  video section  -->
-         <section> 
+         <!-- <section> 
             <div class="video-flex">
                 <div class="video-content">
                     <h1 class="video-tittle">A Simple Perfect Place To Get Lost</h1>
                     <p class="popular-paragraph"> Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. </p>
-                    <p> Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</p>
+                    
                     <p> Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</p>
                     <button class="button"> See more</button>
                 </div>
@@ -174,7 +278,7 @@
                     </video>
                 </div>
             </div>
-         </section>
+         </section> -->
          <!--  newsletter  -->
          <section>
             <div class="newsletter">
