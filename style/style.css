@@ -1,4 +1,5 @@
-/*  nav-bar add section  */
+
+
 /* header */
 header {
     margin: 52px 127px 49px 127px;
@@ -8,7 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-/* common calss nav logo */
+
 .nav-logo{
     display: flex;
     justify-content: center;
@@ -47,7 +48,7 @@ nav ul li a{
 }
 /* banner  */
 .banner-container{
-    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-image: url(/Images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 992px;
@@ -111,33 +112,42 @@ nav ul li a{
     color: rgba(19, 19, 24, 0.70);
 }
 
-
-/* popular */
-.popular {
+/* popular section  */
+.popular-container{
+    margin: 100px 127px 100px 127px;
     display: flex;
-    margin: 100px 130px;
-
+    justify-content: space-between;
+    align-items: center;
 }
-
-
-
-.popular img {
+.popular-container img{
     width: 100%;
 }
-
-.popular-paragraph {
-    color: rgba(19, 19, 24, 0.70);
-    font-family: Mulish;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    /* 162.5% */
+.popular-content {
+    margin-right: 20px;
 }
-
-/* img group*/
-
-
+.popular-content h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 24px;
+}
+.popular-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.70);
+    margin-bottom: 24px;
+}
+.popular-content button {
+    background-color: #FF5400;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 8px;
+    letter-spacing: 2px;
+}
+/* destination */
 .destination-container{
     margin: 0px 127px 100px 127px;
 }
@@ -195,45 +205,66 @@ nav ul li a{
 .destination-last-img{
     width: 673px !important;
 }
-
-
-/*  card  */
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+/* why choose us section */
+.choose-container{
+    margin: 0px 127px 0px 127px;
 }
-
-.card-1 {
+.choose-content{
+    text-align: center;
+}
+.choose-content h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 20px;
+}
+.choose-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.70);
+    width: 643px;
+    margin: 0 auto;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+.box h1{
+    font-size: 24px;
+    font-weight: 800;
+    color: #131318;
+}
+.box p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #5A5A5D;
+}
+.box{
+    padding: 32px;
+}
+.box-1{
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
-    width: 500px;
-    height: 200px;
-
 }
-
-.card-2 {
+.box-2{
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
-    height: 200px;
-    width: 500px;
 }
-
-.card-3 {
+.box-3{
+    position: relative;
+    left: 250px;
     border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
-    background: rgba(251, 181, 99, 0.05);
-    width: 500px;
-    height: 200px;
-    margin-left: 403px;
-    margin-top: 2rem;
-
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
 
 }
-
-/*  deals and cont */
+    /* deals & discount section*/
 .deals-container{
     margin: 100px 127px 100px 127px;
 }
@@ -360,110 +391,115 @@ nav ul li a{
     width: 610px;
     height: 424px;
 }
-/*  newsletter */
-.newsletter{
+/* done */
+.newsletter-container{
+    margin: 100px 127px 100px 127px;
     display: flex;
     justify-content: space-between;
-    margin: 100px;
-    gap: 20px;
+    align-items: center;
 }
-.newsletter-img{
-   position: relative;
-   overflow: hidden;
-   
-  
-
-
+.newsletter-form{
+    padding: 20px;
+    height: 410px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    margin-right: 20px;
 }
 .newsletter-content{
-    background: #FFF;
-    border-radius: 10px;
-border: 1px solid #FF5400;
-
-
- align-items: center;
-   
+    margin-top: 25px;
 }
-.newsletter input{
-    height: 50px;
-    width: 350px;
-    border-radius: 8px;
-background: rgba(19, 19, 24, 0.05);
+.newsletter-content h1{
+    font-size: 24px;
+    font-weight: 800;
+    color: #131318;
 }
-label{
-    display: block;
-    margin-bottom: 10px;
+.newsletter-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #5A5A5D;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.newsletter-filed {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.newsletter-filed input {
+    margin-bottom: 16px;
     width: 393px;
     height: 52px;
-}
-.newsletter-box{
-    width: 324px;
-height: 100px;
-transform: rotate(-19.628deg);
-border-radius: 16px;
-background: #FF5400;
-position: absolute;
-left: 50%;
-top: 50%;
-
-
-}
-
-
-/*  footer */
-footer{
-    width: 100%;
-    height: 300px;
+    border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
-    background-position: center;
-    
+    border: 0;
+}
+.newsletter-filed input:focus{
+    outline: none;
+}
+.newsletter-filed input[type="submit"]{
+    background-color: #FF5400;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.newsletter-img img{
+    width: 450px;
+    height: 400px;
+    position: relative;
 }
 
-
-
-
-
-.icon-img{
-    width: 30px;
-height: 30px;
-flex-shrink: 0;
-}
-.foter-tittle{
-    width: 90%;
-   display: inline-flex;
-   padding-top: 80px;
-   position: absolute;
-
-   align-items: center;
-   
-   justify-content: center;
-   
-   
-}
-.paragraph{
+.travel-striker{
+    border-radius: 10px;
+    background: #FF5400;
+    color: #FFF;
+    width: 190px;
+    height: 70px;
+    transform: rotate(-29.628deg);
+    flex-shrink: 0;
+    position: relative;
+    left: -193px;
+    bottom: -120px;
     text-align: center;
-    padding-top: 120px;
+    align-items: center;
 }
-.footer-icon{
-    text-align: center;
-    
-}
-.copyright{
+
+footer{
     text-align: center;
 }
-/*  video */
-.video-flex{
-    display: flex;
-    margin: 100px 130px 0 130px;
+.footer-subtitle{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5A5A5D;
+}
+.footer-icons{
+    margin-top: 33px;
+}
+.footer-icons a i {
+    margin-right: 23px;
+    text-decoration: none;
+    color: #424247;
+    margin-bottom: 50px;
+}
+hr{
+    width: 872px;
+    height: 1px;
+    margin: 0 auto;
+}
+.footer-rights{
+    margin-top: 50px;
+    margin-bottom: 12px;
+}
+.fa-solid{
+    margin-right: 2px;
 }
 
 
 
 
-
-
-
-/*  mobile responsive  */
+/*  */
+/* Responsive for mobile device */
 @media screen and (max-width: 600px) {
     header {
         margin: 20px 20px 20px 20px;
@@ -507,20 +543,7 @@ flex-shrink: 0;
         width: 287px;
         text-align: center;
     }
-    /* pupular */
-    .popular {
-        flex-direction: column;
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 5px;
-        overflow: hidden;
-    }
-
-    .popular img {
-        margin-top: 20px;
-    }
-
-    /* img group */
+    /*popular tours section */
 
     .popular-container{
         margin: 24px 20px 20px 20px;
@@ -559,81 +582,110 @@ flex-shrink: 0;
     .destination-last-img{
         width: 100% !important;
     }
-
-    /*  card */
-    .card-container {
-        flex-direction: column;
-
+    /* why choose us section */
+    .choose-container{
+        margin: 20px;
+    }
+    .choose-content h1{
+        font-size: 20px;
+    }
+    .choose-content p{
+        font-size: 14px;
+        width: 309px;
+    }
+    .box-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box h1{
+        font-size: 20px;
+    }
+    .box p{
+        font-size: 14px;
+    }
+    .box-3{
+        position: relative;
+        left: 0;
+    }
+    /*deals & discount section */
+    .deals-container{
+        margin: 20px;
+    }
+    .deals-content h1{
+        font-size: 20px;
+    }
+    .deal-main-container{
+        width: 303px;
+        height: 297px;
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        float: right;
+        margin-top: 56px;
+        margin-bottom: 56px;
+        margin-right: 56px;
     }
 
-    .card-1,
-    .card-2,
-    .card-3 {
-        margin-left: 0px;
+    .second-main-container,.deal-main-container{
+        width: 303px;
+        height: 370px;
+        float: right;
+        margin-top: 95px;
+        margin-right: 30px;
+    }
+    .deals-details{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-content{
+        margin: 16px;
+    }
+    .video{
+        width: 335px;
+        height: 200px;
+        margin-top: 24px;
+    }
+    .popular-content h1{
+        font-size: 20px;
+    }
+    /* newsletter */
+    .newsletter-container{
+        margin: 20px;
+        flex-direction: column;
+    }
+    .newsletter-form {
+        height: 425px;
+        border-radius: 16px;
+        padding: 10px;
+        margin: 0 auto;
+        border: 1px solid #FF5400;
+    }
+    .newsletter-filed input {
+        margin-bottom: 16px;
+        width: 309px;
+        height: 52px;
+        border-radius: 8px;
+        background: rgba(19, 19, 24, 0.05);
+        border: 0;
+    }
+    .newsletter-img img{
+        margin-top: 40px;
         width: 100%;
     }
- /*  container */
- .deals-container{
-    margin: 20px;
-}
-.deals-content h1{
-    font-size: 20px;
-}
-.deal-main-container{
-    width: 303px;
-    height: 297px;
-    border-radius: 16px;
-    border: 2px solid #FFF;
-    background: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(2.5px);
-    float: right;
-    margin-top: 56px;
-    margin-bottom: 56px;
-    margin-right: 56px;
-}
+    .travel-striker{
+        position: relative;
+        bottom: 115px;
+        left: 70px;
+    }
+    footer{
+        margin: 100px 20px 20px 20px;
+    }
+    hr{
+        width: 300px;
+    }
 
-.second-main-container,.deal-main-container{
-    width: 303px;
-    height: 370px;
-    float: right;
-    margin-top: 95px;
-    margin-right: 30px;
-}
-.deals-details{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.bottom-content{
-    margin: 16px;
-}
-/*  newsletter */
-.newsletter{
-    flex-direction: column;
-    margin: 0px;
-    gap: 0px;
-    margin: auto;
-}
-.newsletter-img img{
-    width: 335px;
-height: 300px;
 
-    
-}
-.newsletter-box{
- visibility: hidden;
-height: 70.268px;
-transform: rotate(-19.628deg);
-overflow: hidden;
-
-}
-/*  video */
-.video-flex{
-    flex-direction: column;
-    margin: 100px 0px 0px 0px;
-}
-.video-flex video{
-    width: 60%;
-}
+}           
